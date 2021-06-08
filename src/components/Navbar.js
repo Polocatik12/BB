@@ -1,6 +1,6 @@
 import React from "react"
-import logo from "../logo.png";
-import {Link} from "react-scroll"
+import logo from "../Bwashl.png";
+import {Link} from "react-scroll";
 //REACT FONTAWESOME IMPORT
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -20,16 +20,19 @@ const Navbar = () => {
                 <Link smooth={true} to="home"  className="nav-link" aria-current="page" href="#">Home</Link>
               </li>
               <li className="nav-item">
-                <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">about me</Link>
+                <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">KIM JESTEŚMY</Link>
                 </li>
                 <li className="nav-item">
                 <Link smooth={true} to="services" offset={-110} className="nav-link" href="#">services</Link>
               </li>
               <li className="nav-item">
-                <Link smooth={true} to="experience" offset={-110} className="nav-link" href="#">experience</Link>
+                <Link smooth={true} to="experience" offset={-110} className="nav-link" href="#">Korzyści</Link>
               </li>
               <li className="nav-item">
                 <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">portfolio</Link>  
+              </li>
+              <li className="nav-item">
+                <Link smooth={true} to="testimonials" offset={-110} className="nav-link" href="#">Zadowolenie</Link>  
               </li>
               <li className="nav-item">
                 <Link smooth={true} to="contacts" offset={-110} className="nav-link" href="#">contacts</Link>  

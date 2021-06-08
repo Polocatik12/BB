@@ -1,8 +1,10 @@
 import React from "react";
-import netflix from "../images/netflix.png";
-import cityGuide from "../images/city-guide-app.png";
-import portfolio from "../images/portfolio.png";
-import taskManager from "../images/task-manager.png";
+import bmw5 from "../images/car/bmw5.jpg";
+import bmwf13 from "../images/car/bmwf13.jpg";
+import cls from "../images/car/cls.jpg";
+import hur from "../images/car/hur.jpg";
+import porsh from "../images/car/porsh.jpg";
+import roll from "../images/car/roll.jpg";
 //FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus} from '@fortawesome/free-solid-svg-icons'; 
@@ -13,103 +15,128 @@ import "react-popupbox/dist/react-popupbox.css";
 
 const Portfolio = () => {
 
-//Netflix
-const openPopupboxNetflix =() =>{
+//M5
+const openPopupboxBmw5 =() =>{
     const content = (
    <>
-   <img className="portfolio-image-popupbox" src={netflix} alt="Netflix Clone Project..."/>
-   <p>Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Reprehenderit nostrum aperiam
-         veritatis? Accusamus, velit nam. Officia tempora ipsum magni 
-         quaerat vero quae accusantium dignissimos quo.</p>
-    <b>GitHub:</b> <a className="hyper-link" onClick={()=>window.open("https://github.com/8020Coding/netflix-project")}>https://github.com/8020Coding/netflix-project</a>
+   <img className="portfolio-image-popupbox" src={bmw5} alt="Сommercial M5 F10 & CLS63 AMG"/>
+   <p>LIMMA - Сommercial M5 F10 & CLS63 AMG Part 2 "Sultan tires"</p>
+    <b>Youtube:</b> <a className="hyper-link" onClick={()=>window.open("https://www.youtube.com/watch?v=ao-eFyuoH4I")}>https://www.youtube.com/watch?v=ao-eFyuoH4I</a>
+    </>
+    )
+    PopupboxManager.open({content})
+    }
+
+const PopupboxManagerBmw5={
+      titleBar: {
+        enable: true,
+        text: 'Сommercial M5'
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+    }
+
+
+//F13
+const openPopupboxBmwf13 =() =>{
+    const content = (
+   <>
+   <img className="portfolio-image-popupbox" src={bmwf13} alt="BMW M6 F13 MANHART 900..."/>
+   <p>BMW M6 F13 MANHART 900л.с. Stage 3 - LIMMA & FELIX FERRO</p>
+    <b>Youtube:</b> <a className="hyper-link" onClick={()=>window.open("https://www.youtube.com/watch?v=MYsjvB_jcpA")}>https://www.youtube.com/watch?v=MYsjvB_jcpA</a>
     </>
     )
     PopupboxManager.open({content})
 }
 
-const popupboxConfigNetflix ={
+const popupboxConfigBmwf13 ={
         titleBar:{
             enable: true,
-            text: "Netflix clone project."
+            text: "BMW M6 F13 MANHART 900."
         },
         fadeIn: true,
         fadeInSpeed:500
 }
 
-//City Guide App
-const openPopupboxCityGuide =() =>{
+//Cls
+const openPopupboxCls =() =>{
     const content = (
    <>
-   <img className="portfolio-image-popupbox" src={cityGuide} alt="City Guide App Project..."/>
-   <p>Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Reprehenderit nostrum aperiam
-         veritatis? Accusamus, velit nam. Officia tempora ipsum magni 
-         quaerat vero quae accusantium dignissimos quo.</p>
-    <b>Demo:</b> <a className="hyper-link" onClick={()=>window.open("http://city-guide-app-project.herokuapp.com/", "_blank")}>http://city-guide-app-project.herokuapp.com/</a>
-    <br/>
-    <b>GitHub:</b> <a className="hyper-link" onClick={()=>window.open("https://github.com/8020Coding/netflix-project")}>https://github.com/8020Coding/netflix-project</a>
+   <img className="portfolio-image-popupbox" src={cls} alt="Demon CLS63 AMG - LIMMA..."/>
+   <p>Demon CLS63 AMG - LIMMA</p>
+    <b>Youtube:</b> <a className="hyper-link" onClick={()=>window.open("https://www.youtube.com/watch?v=fGlTwlryXSM")}>https://www.youtube.com/watch?v=fGlTwlryXSM</a>
     </>
     )
     PopupboxManager.open({content})
 }
 
-const popupboxConfigCityGuide ={
+const popupboxConfigCls ={
         titleBar:{
             enable: true,
-            text: "City Guide App."
+            text: "Demon CLS63 AMG."
         },
         fadeIn: true,
         fadeInSpeed:500
 }
 
-//Portfolio Project
-const openPopupboxPortfolio =() =>{
+//Hur
+const openPopupboxHur =() =>{
     const content = (
    <>
-   <img className="portfolio-image-popupbox" src={portfolio} alt="Portfolio Project..."/>
-   <p>Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Reprehenderit nostrum aperiam
-         veritatis? Accusamus, velit nam. Officia tempora ipsum magni 
-         quaerat vero quae accusantium dignissimos quo.</p>
-    <b>Demo:</b> <a className="hyper-link" onClick={()=>window.open("http://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>http://portfolio-rea-and-material-ui.herokuapp.com/</a>
-    <br/>
-    <b>GitHub:</b> <a className="hyper-link" onClick={()=>window.open("http://portfolio-rea-and-material-ui.herokuapp.com/")}>http://portfolio-rea-and-material-ui.herokuapp.com/</a>
+   <img className="portfolio-image-popupbox" src={hur} alt="Lamborghini Huracán..."/>
+   <p>LIMMA - Lamborghini Huracán & McLaren 650S Spider "Dubai"</p>
+    <b>Youtube:</b> <a className="hyper-link" onClick={()=>window.open("https://www.youtube.com/watch?v=52LUnBKz0u0")}>https://www.youtube.com/watch?v=52LUnBKz0u0</a>
     </>
     )
     PopupboxManager.open({content})
 }
 
-const popupboxConfigPortfolio ={
+const popupboxConfigHur ={
         titleBar:{
             enable: true,
-            text: "Portfolio Project."
+            text: "Lamborghini Huracán"
         },
         fadeIn: true,
         fadeInSpeed:500
 }
 
-//Task Manager React and Redux Project
-const openPopupboxTaskManager =() =>{
+//Porsh
+const openPopupboxPorsh =() =>{
     const content = (
    <>
-   <img className="portfolio-image-popupbox" src={taskManager} alt="Task Manager React and Redux Project..."/>
-   <p>Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit. Reprehenderit nostrum aperiam
-         veritatis? Accusamus, velit nam. Officia tempora ipsum magni 
-         quaerat vero quae accusantium dignissimos quo.</p>
-    <b>Demo:</b> <a className="hyper-link" onClick={()=>window.open("http://portfolio-rea-and-material-ui.herokuapp.com/", "_blank")}>http://portfolio-rea-and-material-ui.herokuapp.com/</a>
-    <br/>
-    <b>GitHub:</b> <a className="hyper-link" onClick={()=>window.open("http://portfolio-rea-and-material-ui.herokuapp.com/")}>http://portfolio-rea-and-material-ui.herokuapp.com/</a>
+   <img className="portfolio-image-popupbox" src={porsh} alt="Porsche 911 Turbo S..."/>
+   <p>Porsche 911 Turbo S Sleep Felix Ferro & LIMMA Girl Cars</p>
+    <b>GitHub:</b> <a className="hyper-link" onClick={()=>window.open("https://www.youtube.com/watch?v=ZugNU31znlA")}>https://www.youtube.com/watch?v=ZugNU31znlA</a>
     </>
     )
     PopupboxManager.open({content})
 }
 
-const popupboxConfigTaskManager ={
+const popupboxConfigPorsh ={
         titleBar:{
             enable: true,
-            text: "Task Manager React and Redux Project."
+            text: "Porsche 911 Turbo S"
+        },
+        fadeIn: true,
+        fadeInSpeed:500
+}
+
+//Roll
+const openPopupboxRoll =() =>{
+    const content = (
+   <>
+   <img className="portfolio-image-popupbox" src={roll} alt="Rolls Royce..."/>
+   <p>Rolls Royce Wraith & Iqauto</p>
+    <b>Youtube:</b> <a className="hyper-link" onClick={()=>window.open("https://www.youtube.com/watch?v=8Fw65dBPUNE")}>https://www.youtube.com/watch?v=8Fw65dBPUNE</a>
+    </>
+    )
+    PopupboxManager.open({content})
+}
+
+const popupboxConfigRoll ={
+        titleBar:{
+            enable: true,
+            text: "Rolls Royce"
         },
         fadeIn: true,
         fadeInSpeed:500
@@ -121,35 +148,49 @@ const popupboxConfigTaskManager ={
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">portfolio</h1>
                 <div className="image-box-wrapper row row-cols-auto justify-content-center">
-                    <div className="portfolio-image-box" onClick={openPopupboxNetflix}>
-                      <img className="portfolio-image" src={netflix} alt="Netflix Clone Project..."/>
+                    <div className="portfolio-image-box" onClick={openPopupboxBmw5}>
+                      <img className="portfolio-image" src={bmw5} alt="Сommercial M5 F10 & CLS63 AMG"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/> 
                      </div>
                 {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxCityGuide}>
-                     <img className="portfolio-image" src={cityGuide} alt="City Guide Project..."/>
+                    <div className="portfolio-image-box" onClick={openPopupboxBmwf13}>
+                     <img className="portfolio-image" src={bmwf13} alt="BMW M6 F13 MANHART 900"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                      </div>
                 {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxPortfolio}>
-                         <img className="portfolio-image" src={portfolio} alt="Portfolio React and material UI Project..."/>
+                    <div className="portfolio-image-box" onClick={openPopupboxCls}>
+                         <img className="portfolio-image" src={cls} alt="Demon CLS63 AMG - LIMMA..."/>
                          <div className="overflow"></div>
                          <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                      </div>
                 {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxTaskManager}>
-                        <img className="portfolio-image" src={taskManager} alt="Task Manager React and Redux Project..."/>
+                    <div className="portfolio-image-box" onClick={openPopupboxHur}>
+                        <img className="portfolio-image" src={hur} alt="Lamborghini Huracán..."/>
                          <div className="overflow"></div>
                          <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
                     </div>
+                {/* - */}
+                         <div className="portfolio-image-box" onClick={openPopupboxPorsh}>
+                         <img className="portfolio-image" src={porsh} alt="Porsche 911 Turbo..."/>
+                            <div className="overflow"></div>
+                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
+                          </div>
+                        {/* - */}
+                        <div className="portfolio-image-box" onClick={openPopupboxRoll}>
+                        <img className="portfolio-image" src={roll} alt="Rolls Royce..."/>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus}/>
+                        </div>
                 </div>
             </div>
-            <PopupboxContainer {...popupboxConfigNetflix}/>
-            <PopupboxContainer {...popupboxConfigCityGuide}/>
-            <PopupboxContainer {...popupboxConfigPortfolio}/>
-            <PopupboxContainer {...popupboxConfigTaskManager}/>
+            <PopupboxContainer {...PopupboxManagerBmw5}/>
+            <PopupboxContainer {...popupboxConfigBmwf13}/>
+            <PopupboxContainer {...popupboxConfigCls}/>
+            <PopupboxContainer {...popupboxConfigHur}/>
+            <PopupboxContainer {...popupboxConfigPorsh}/>
+            <PopupboxContainer {...popupboxConfigRoll}/>
         </div>
            
     )

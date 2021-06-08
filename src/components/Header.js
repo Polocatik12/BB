@@ -5,15 +5,14 @@ const Header = () => {
     return (
        <div id="home" className="header-wraper">
           <div className="main-info">
-              <h1>Web development and websites promotions</h1>
+              <h1>Myjnia Bwash w Lublinie</h1>
               <Typed
                 className="typed-text"
-                strings={["Web Design", "Web Development", "Facebook ads SMM", "Google ADS"]}
+                strings={["MYJNIA SAMOCHODOWA", "DETALE SĄ NAJWAŻNIEJSZE", "POWIERZ NAM SWOJE AUTO", "A MY ZAJMIEMY SIĘ RESZTĄ"]}
                 typeSpeed={40}
                 backSpeed={60}
                 loop
-              />    
-              <a href="#" className="btn-main-offer">contact me</a>
+              /> 
               </div> 
        </div>
     )
